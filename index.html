@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>FastBite | Fresh Fast Food</title>
+    <title>FastBite | Fresh & Delicious Fast Food</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
@@ -17,43 +19,77 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
     <header class="header">
 
         <div class="container navbar">
 
             <!-- Logo -->
             <a href="index.html" class="logo">
+
                 <span class="logo-icon">🍔</span>
-                <span>Fast<span class="logo-highlight">Bite</span></span>
+
+                <span>
+                    Fast<span class="logo-highlight">Bite</span>
+                </span>
+
             </a>
 
+
             <!-- Desktop Navigation -->
+
             <nav class="nav-menu">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="menu.html" class="nav-link">Menu</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+
+                <a href="index.html" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="menu.html" class="nav-link">
+                    Menu
+                </a>
+
+                <a href="about.html" class="nav-link">
+                    About
+                </a>
+
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+
             </nav>
 
+
             <!-- Navbar Actions -->
+
             <div class="nav-actions">
 
                 <a href="cart.html" class="cart-btn">
+
                     🛒
-                    <span class="cart-count">0</span>
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
                 </a>
 
                 <a href="login.html" class="login-btn">
                     Login
                 </a>
 
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <button
+                    class="mobile-menu-btn"
+                    id="mobileMenuBtn"
+                    aria-label="Open menu"
+                >
                     ☰
                 </button>
 
@@ -61,40 +97,743 @@
 
         </div>
 
+
         <!-- Mobile Navigation -->
+
         <nav class="mobile-nav" id="mobileNav">
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="login.html">Login</a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
         </nav>
 
     </header>
 
 
-    <!-- ================= MAIN ================= -->
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
     <main>
 
-        <section class="page-placeholder">
+
+        <!-- =================================================
+             HERO SECTION
+        ================================================== -->
+
+        <section class="hero">
+
+            <div class="container hero-content">
+
+
+                <!-- Hero Text -->
+
+                <div class="hero-text">
+
+                    <span class="hero-badge">
+                        🔥 Fresh & Delicious
+                    </span>
+
+                    <h1>
+                        Your Favorite
+                        <span>Fast Food</span>
+                        Delivered Fast.
+                    </h1>
+
+                    <p>
+                        Enjoy delicious burgers, crispy fries,
+                        cheesy pizzas and refreshing drinks
+                        made fresh just for you.
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="menu.html"
+                            class="primary-btn"
+                        >
+                            Order Now →
+                        </a>
+
+                        <a
+                            href="#popular"
+                            class="secondary-btn"
+                        >
+                            Explore Food
+                        </a>
+
+                    </div>
+
+
+                    <!-- Small Stats -->
+
+                    <div class="hero-stats">
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                25+
+                            </strong>
+
+                            <span>
+                                Food Items
+                            </span>
+
+                        </div>
+
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                4.8★
+                            </strong>
+
+                            <span>
+                                Customer Rating
+                            </span>
+
+                        </div>
+
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                30min
+                            </strong>
+
+                            <span>
+                                Fast Delivery
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Food -->
+
+                <div class="hero-image">
+
+                    <div class="hero-circle"></div>
+
+                    <div class="hero-food">
+                        🍔
+                    </div>
+
+
+                    <!-- Floating Cards -->
+
+                    <div class="floating-card rating-card">
+
+                        <span class="floating-icon">
+                            ⭐
+                        </span>
+
+                        <div>
+                            <strong>
+                                4.8/5
+                            </strong>
+
+                            <small>
+                                Customer Rating
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card delivery-card">
+
+                        <span class="floating-icon">
+                            🚀
+                        </span>
+
+                        <div>
+                            <strong>
+                                30 Min
+                            </strong>
+
+                            <small>
+                                Fast Delivery
+                            </small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CATEGORY SECTION
+        ================================================== -->
+
+        <section class="categories section">
 
             <div class="container">
 
-                <span class="section-tag">WELCOME</span>
+                <div class="section-header">
 
-                <h1>
-                    FastBite
-                    <span>Fast Food Shop</span>
-                </h1>
+                    <div>
 
-                <p>
-                    Your fast-food website foundation is ready.
-                    The complete homepage will be created in Step 2.
-                </p>
+                        <span class="section-tag">
+                            EXPLORE
+                        </span>
 
-                <a href="menu.html" class="primary-btn">
-                    Explore Menu →
-                </a>
+                        <h2>
+                            What Are You
+                            <span>Craving?</span>
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="menu.html"
+                        class="view-all"
+                    >
+                        View All →
+                    </a>
+
+                </div>
+
+
+                <div class="category-grid">
+
+
+                    <a
+                        href="menu.html?category=Burgers"
+                        class="category-card"
+                    >
+
+                        <div class="category-icon">
+                            🍔
+                        </div>
+
+                        <h3>
+                            Burgers
+                        </h3>
+
+                        <p>
+                            Juicy & cheesy
+                        </p>
+
+                    </a>
+
+
+                    <a
+                        href="menu.html?category=Pizza"
+                        class="category-card"
+                    >
+
+                        <div class="category-icon">
+                            🍕
+                        </div>
+
+                        <h3>
+                            Pizza
+                        </h3>
+
+                        <p>
+                            Hot & cheesy
+                        </p>
+
+                    </a>
+
+
+                    <a
+                        href="menu.html?category=Fries"
+                        class="category-card"
+                    >
+
+                        <div class="category-icon">
+                            🍟
+                        </div>
+
+                        <h3>
+                            Fries
+                        </h3>
+
+                        <p>
+                            Crispy & tasty
+                        </p>
+
+                    </a>
+
+
+                    <a
+                        href="menu.html?category=Chicken"
+                        class="category-card"
+                    >
+
+                        <div class="category-icon">
+                            🍗
+                        </div>
+
+                        <h3>
+                            Chicken
+                        </h3>
+
+                        <p>
+                            Crispy & spicy
+                        </p>
+
+                    </a>
+
+
+                    <a
+                        href="menu.html?category=Drinks"
+                        class="category-card"
+                    >
+
+                        <div class="category-icon">
+                            🥤
+                        </div>
+
+                        <h3>
+                            Drinks
+                        </h3>
+
+                        <p>
+                            Cool & refreshing
+                        </p>
+
+                    </a>
+
+
+                    <a
+                        href="menu.html?category=Desserts"
+                        class="category-card"
+                    >
+
+                        <div class="category-icon">
+                            🍰
+                        </div>
+
+                        <h3>
+                            Desserts
+                        </h3>
+
+                        <p>
+                            Sweet & delicious
+                        </p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             POPULAR PRODUCTS
+        ================================================== -->
+
+        <section
+            class="popular section"
+            id="popular"
+        >
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span class="section-tag">
+                            BEST SELLERS
+                        </span>
+
+                        <h2>
+                            Our Most
+                            <span>Popular Items</span>
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="menu.html"
+                        class="view-all"
+                    >
+                        See Full Menu →
+                    </a>
+
+                </div>
+
+
+                <!-- Products inserted by JavaScript -->
+
+                <div
+                    class="product-grid"
+                    id="popularProducts"
+                >
+
+                    <div class="loading">
+                        Loading delicious food...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SPECIAL OFFER
+        ================================================== -->
+
+        <section class="offer-section">
+
+            <div class="container">
+
+                <div class="offer-box">
+
+                    <div class="offer-content">
+
+                        <span class="offer-label">
+                            🔥 LIMITED TIME OFFER
+                        </span>
+
+                        <h2>
+                            Get 20% OFF
+                            <br>
+                            Your First Order!
+                        </h2>
+
+                        <p>
+                            Use code
+                            <strong>FAST20</strong>
+                            at checkout and enjoy your
+                            favorite food for less.
+                        </p>
+
+                        <a
+                            href="menu.html"
+                            class="offer-btn"
+                        >
+                            Order Now →
+                        </a>
+
+                    </div>
+
+
+                    <div class="offer-image">
+                        🍕
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             WHY CHOOSE US
+        ================================================== -->
+
+        <section class="features section">
+
+            <div class="container">
+
+                <div class="section-header centered">
+
+                    <span class="section-tag">
+                        WHY FASTBITE?
+                    </span>
+
+                    <h2>
+                        Made With Love,
+                        <span>Served With Speed</span>
+                    </h2>
+
+                    <p>
+                        We make every order special using
+                        fresh ingredients and quality recipes.
+                    </p>
+
+                </div>
+
+
+                <div class="features-grid">
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            🥬
+                        </div>
+
+                        <h3>
+                            Fresh Ingredients
+                        </h3>
+
+                        <p>
+                            We use fresh and quality ingredients
+                            in every meal we prepare.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            Fast Delivery
+                        </h3>
+
+                        <p>
+                            Your favorite food reaches you
+                            hot and fresh in around 30 minutes.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            👨‍🍳
+                        </div>
+
+                        <h3>
+                            Expert Chefs
+                        </h3>
+
+                        <p>
+                            Our chefs prepare every dish
+                            with care and attention.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            💰
+                        </div>
+
+                        <h3>
+                            Affordable Prices
+                        </h3>
+
+                        <p>
+                            Great taste doesn't have to cost
+                            a fortune.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             REVIEWS
+        ================================================== -->
+
+        <section class="reviews section">
+
+            <div class="container">
+
+                <div class="section-header centered">
+
+                    <span class="section-tag">
+                        CUSTOMER LOVE
+                    </span>
+
+                    <h2>
+                        What Our Customers
+                        <span>Say About Us</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="review-grid">
+
+
+                    <div class="review-card">
+
+                        <div class="review-stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+
+                        <p>
+                            "The burger was absolutely amazing!
+                            Fresh, hot and packed with flavor.
+                            Definitely ordering again."
+                        </p>
+
+                        <div class="review-user">
+
+                            <div class="user-avatar">
+                                R
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Rahul Patel
+                                </strong>
+
+                                <small>
+                                    Regular Customer
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="review-card">
+
+                        <div class="review-stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+
+                        <p>
+                            "Fast delivery and really tasty
+                            pizza. The prices are also very
+                            reasonable. Loved it!"
+                        </p>
+
+                        <div class="review-user">
+
+                            <div class="user-avatar">
+                                P
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Priya Shah
+                                </strong>
+
+                                <small>
+                                    Happy Customer
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="review-card">
+
+                        <div class="review-stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+
+                        <p>
+                            "FastBite has become my go-to place
+                            for evening snacks. Their fries are
+                            super crispy!"
+                        </p>
+
+                        <div class="review-user">
+
+                            <div class="user-avatar">
+                                A
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Amit Mehta
+                                </strong>
+
+                                <small>
+                                    Food Lover
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CTA
+        ================================================== -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <div>
+
+                        <span class="section-tag">
+                            HUNGRY?
+                        </span>
+
+                        <h2>
+                            Good Food Is
+                            <span>Just One Click Away!</span>
+                        </h2>
+
+                        <p>
+                            Browse our menu and order your
+                            favorite meal today.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="menu.html"
+                        class="primary-btn cta-btn"
+                    >
+                        Start Ordering →
+                    </a>
+
+                </div>
 
             </div>
 
@@ -103,60 +842,113 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
     <footer class="footer">
 
         <div class="container footer-grid">
 
+
             <!-- Brand -->
+
             <div class="footer-brand">
 
-                <a href="index.html" class="logo">
-                    <span class="logo-icon">🍔</span>
-                    <span>Fast<span class="logo-highlight">Bite</span></span>
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    <span class="logo-icon">
+                        🍔
+                    </span>
+
+                    <span>
+                        Fast<span class="logo-highlight">
+                            Bite
+                        </span>
+                    </span>
+
                 </a>
 
                 <p>
-                    Fresh, delicious and affordable fast food
-                    made for everyone.
+                    Fresh, delicious and affordable fast
+                    food made for everyone.
                 </p>
 
             </div>
 
 
             <!-- Quick Links -->
+
             <div class="footer-column">
 
-                <h3>Quick Links</h3>
+                <h3>
+                    Quick Links
+                </h3>
 
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="menu.html">
+                    Menu
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
 
             </div>
 
 
             <!-- Customer -->
+
             <div class="footer-column">
 
-                <h3>Customer</h3>
+                <h3>
+                    Customer
+                </h3>
 
-                <a href="login.html">Login</a>
-                <a href="cart.html">Cart</a>
-                <a href="checkout.html">Checkout</a>
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+                <a href="checkout.html">
+                    Checkout
+                </a>
 
             </div>
 
 
             <!-- Contact -->
+
             <div class="footer-column">
 
-                <h3>Contact</h3>
+                <h3>
+                    Contact
+                </h3>
 
-                <p>📍 Surat, Gujarat</p>
-                <p>📞 +91 98765 43210</p>
-                <p>✉️ hello@fastbite.com</p>
+                <p>
+                    📍 Surat, Gujarat
+                </p>
+
+                <p>
+                    📞 +91 98765 43210
+                </p>
+
+                <p>
+                    ✉️ hello@fastbite.com
+                </p>
 
             </div>
 
@@ -168,8 +960,8 @@
             <div class="container">
 
                 <p>
-                    © <span id="currentYear"></span> FastBite.
-                    All Rights Reserved.
+                    © <span id="currentYear"></span>
+                    FastBite. All Rights Reserved.
                 </p>
 
             </div>
@@ -179,9 +971,14 @@
     </footer>
 
 
-    <!-- JavaScript -->
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
 
 </body>
+
 </html>
