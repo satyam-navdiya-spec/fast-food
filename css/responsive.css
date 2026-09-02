@@ -1,0 +1,99 @@
+/* =========================================
+   FASTBITE - RESPONSIVE CSS
+========================================= */
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 900px) {
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    /* Navbar */
+
+    .navbar {
+        height: 68px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+
+    /* Mobile Navigation */
+
+    .mobile-nav {
+        display: none;
+
+        flex-direction: column;
+
+        padding: 15px 4% 20px;
+
+        background: var(--white);
+
+        border-top: 1px solid var(--border);
+    }
+
+    .mobile-nav.show {
+        display: flex;
+    }
+
+    .mobile-nav a {
+        padding: 12px 0;
+
+        border-bottom: 1px solid var(--border);
+
+        color: #444;
+
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .mobile-nav a:last-child {
+        border-bottom: none;
+    }
+
+    .mobile-nav a:hover {
+        color: var(--primary);
+    }
+
+
+    /* Page */
+
+    .page-placeholder {
+        min-height: 550px;
+    }
+
+
+    /* Footer */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 45px 0;
+    }
+
+}
