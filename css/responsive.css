@@ -506,3 +506,127 @@
     }
 
 }
+
+
+/* =========================================================
+   FOOD DETAILS RESPONSIVE
+   ========================================================= */
+
+   @media (max-width: 1100px) {
+
+    .food-details {
+        gap: 40px;
+    }
+
+    .food-details-image-box {
+        height: 450px;
+    }
+
+    .food-details-content h1 {
+        font-size: 36px;
+    }
+
+    .related-products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .food-details {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .food-details-image-box {
+        height: 450px;
+    }
+
+    .food-details-content h1 {
+        font-size: 34px;
+    }
+
+    .related-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .details-breadcrumb-section {
+        padding-top: 18px;
+    }
+
+    .food-details-section {
+        padding: 35px 0 55px;
+    }
+
+    .food-details-image-box {
+        height: 330px;
+    }
+
+    .food-details-content h1 {
+        font-size: 29px;
+    }
+
+    .food-details-price {
+        font-size: 28px;
+    }
+
+    .food-details-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .details-cart-btn,
+    .food-details-actions .secondary-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .quantity-section {
+        justify-content: space-between;
+    }
+
+    .related-products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .related-product-image {
+        height: 230px;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+
+    .food-details-image-box {
+        height: 280px;
+    }
+
+    .food-details-content h1 {
+        font-size: 25px;
+    }
+
+    .food-details-rating {
+        flex-wrap: wrap;
+    }
+
+    .food-details-description {
+        font-size: 14px;
+    }
+
+    .details-popular-badge {
+        top: 12px;
+        left: 12px;
+        padding: 7px 11px;
+        font-size: 11px;
+    }
+
+}
+

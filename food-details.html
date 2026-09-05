@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Details | FastBite</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="container header-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🍔</span>
+                <span>Fast<span>Bite</span></span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+                <a href="cart.html" class="cart-link">
+                    🛒 Cart
+                    <span id="cartCount" class="cart-count">0</span>
+                </a>
+
+                <a href="login.html" class="nav-login-btn">
+                    Login
+                </a>
+
+            </nav>
+
+            <button
+                type="button"
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- Breadcrumb -->
+
+        <section class="details-breadcrumb-section">
+
+            <div class="container">
+
+                <div class="details-breadcrumb">
+
+                    <a href="index.html">Home</a>
+
+                    <span>›</span>
+
+                    <a href="menu.html">Menu</a>
+
+                    <span>›</span>
+
+                    <span id="breadcrumbProduct">
+                        Food Details
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Product Details -->
+
+        <section class="food-details-section">
+
+            <div class="container">
+
+                <!-- Loading -->
+
+                <div id="detailsLoading" class="details-loading">
+
+                    <div class="details-spinner"></div>
+
+                    <p>Loading food details...</p>
+
+                </div>
+
+
+                <!-- Product -->
+
+                <div
+                    id="foodDetails"
+                    class="food-details"
+                    style="display: none;"
+                >
+
+                    <!-- Image -->
+
+                    <div class="food-details-image-wrapper">
+
+                        <div class="food-details-image-box">
+
+                            <img
+                                id="foodImage"
+                                src=""
+                                alt="Food"
+                                class="food-details-image"
+                            >
+
+                            <span
+                                id="foodBadge"
+                                class="details-popular-badge"
+                                style="display: none;"
+                            >
+                                ⭐ Popular
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Information -->
+
+                    <div class="food-details-content">
+
+                        <div
+                            id="foodCategory"
+                            class="food-details-category"
+                        >
+                            Category
+                        </div>
+
+                        <h1 id="foodName">
+                            Food Name
+                        </h1>
+
+
+                        <!-- Rating -->
+
+                        <div class="food-details-rating">
+
+                            <span id="foodStars">
+                                ★★★★★
+                            </span>
+
+                            <strong id="foodRating">
+                                5.0
+                            </strong>
+
+                            <span>
+                                Customer Rating
+                            </span>
+
+                        </div>
+
+
+                        <!-- Price -->
+
+                        <div class="food-details-price">
+
+                            ₹<span id="foodPrice">
+                                0
+                            </span>
+
+                        </div>
+
+
+                        <!-- Description -->
+
+                        <p
+                            id="foodDescription"
+                            class="food-details-description"
+                        >
+                            Food description
+                        </p>
+
+
+                        <!-- Availability -->
+
+                        <div
+                            id="foodAvailability"
+                            class="food-availability"
+                        >
+                            ✓ Available
+                        </div>
+
+
+                        <!-- Quantity -->
+
+                        <div class="quantity-section">
+
+                            <label>
+                                Quantity
+                            </label>
+
+                            <div class="quantity-control">
+
+                                <button
+                                    type="button"
+                                    id="decreaseQty"
+                                    class="quantity-btn"
+                                >
+                                    −
+                                </button>
+
+                                <span id="quantity">
+                                    1
+                                </span>
+
+                                <button
+                                    type="button"
+                                    id="increaseQty"
+                                    class="quantity-btn"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Actions -->
+
+                        <div class="food-details-actions">
+
+                            <button
+                                type="button"
+                                id="addDetailsCartBtn"
+                                class="primary-btn details-cart-btn"
+                            >
+                                🛒 Add to Cart
+                            </button>
+
+                            <a
+                                href="menu.html"
+                                class="secondary-btn"
+                            >
+                                ← Back to Menu
+                            </a>
+
+                        </div>
+
+
+                        <!-- Extra Information -->
+
+                        <div class="food-details-features">
+
+                            <div class="detail-feature">
+
+                                <span>🍴</span>
+
+                                <div>
+                                    <strong>Freshly Prepared</strong>
+                                    <small>
+                                        Made fresh for every order
+                                    </small>
+                                </div>
+
+                            </div>
+
+                            <div class="detail-feature">
+
+                                <span>⚡</span>
+
+                                <div>
+                                    <strong>Fast Delivery</strong>
+                                    <small>
+                                        Quick preparation & delivery
+                                    </small>
+                                </div>
+
+                            </div>
+
+                            <div class="detail-feature">
+
+                                <span>🥬</span>
+
+                                <div>
+                                    <strong>Quality Ingredients</strong>
+                                    <small>
+                                        Carefully selected ingredients
+                                    </small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Invalid Product -->
+
+                <div
+                    id="detailsNotFound"
+                    class="details-not-found"
+                    style="display: none;"
+                >
+
+                    <div class="not-found-icon">
+                        🍽️
+                    </div>
+
+                    <h2>Food Item Not Found</h2>
+
+                    <p>
+                        Sorry, we couldn't find the food item you're
+                        looking for.
+                    </p>
+
+                    <a
+                        href="menu.html"
+                        class="primary-btn"
+                    >
+                        Browse Menu
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RELATED PRODUCTS ================= -->
+
+        <section
+            id="relatedSection"
+            class="related-products-section"
+            style="display: none;"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        You May Also Like
+                    </span>
+
+                    <h2>
+                        Related <span>Food</span>
+                    </h2>
+
+                    <p>
+                        Try some more delicious items from the same
+                        category.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="relatedProducts"
+                    class="related-products-grid"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-column">
+
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon">🍔</span>
+                    <span>Fast<span>Bite</span></span>
+                </a>
+
+                <p>
+                    Delicious food, fresh ingredients and fast service.
+                    Your favorite food is just a click away.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Customer Service</h3>
+
+                <a href="cart.html">My Cart</a>
+                <a href="login.html">Login</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>📍 Surat, Gujarat, India</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ hello@fastbite.com</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 FastBite. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/food-details.js"></script>
+
+</body>
+</html>
